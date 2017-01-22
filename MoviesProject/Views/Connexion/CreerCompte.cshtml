@@ -1,0 +1,32 @@
+﻿@model MoviesProject.Models.Utilisateur
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Les films";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Inscription</h3>
+                    @using (Html.BeginForm())
+                    {
+                        <div>
+                            @Html.LabelFor(m => m.NomUtilisateur)
+                            @Html.TextBoxFor(m => m.NomUtilisateur)
+                            @Html.ValidationMessageFor(m => m.NomUtilisateur)
+                        </div>
+                        <div>
+                            @Html.LabelFor(m => m.MotDePasse)
+                            @Html.PasswordFor(m => m.MotDePasse)
+                            @Html.ValidationMessageFor(m => m.MotDePasse)
+                        </div>
+                        <input type="submit" value="Créer" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

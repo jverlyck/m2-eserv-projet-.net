@@ -1,0 +1,42 @@
+﻿@model MoviesProject.ViewModels.UtilisateurViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Connexion";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    @if(Model.Authentifie)
+                    {
+                        <h3>Vous êtes déjà authentifié avec le login : @Model.Utilisateur.NomUtilisateur</h3>
+                        @Html.ActionLink("Voulez-vous vous déconnecter ?", "Deconnexion")
+                    }
+                    else
+                    {
+                        <h3>Connexion</h3>
+                        using (Html.BeginForm())
+                        {
+                            <div>
+                                @Html.LabelFor(m => m.Utilisateur.NomUtilisateur)
+                                @Html.TextBoxFor(m => m.Utilisateur.NomUtilisateur)
+                                @Html.ValidationMessageFor(m => m.Utilisateur.NomUtilisateur)
+                            </div>
+                            <div>
+                                @Html.LabelFor(m => m.Utilisateur.MotDePasse)
+                                @Html.PasswordFor(m => m.Utilisateur.MotDePasse)
+                                @Html.ValidationMessageFor(m => m.Utilisateur.MotDePasse)
+                            </div>
+                            <input type="submit" value="Se connecter" />
+                            <br />
+                            @Html.ActionLink("Inscription", "CreerCompte")
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

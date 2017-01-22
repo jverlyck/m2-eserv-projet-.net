@@ -1,0 +1,57 @@
+﻿@model List<MoviesProject.Models.Film>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Les films";
+}
+
+<div class="container">
+    <div class="row">
+        @{
+            foreach (var film in Model)
+            {
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <b>@film.Nom</b> 
+                            @if (ViewBag.role == "ADMIN")
+                            {
+                                @Html.ActionLink("Modifier", "ModifierFilm", "Film", new { id = film.Id }, new { @class = "btn btn-warning" });
+                                @Html.ActionLink("Supprimer", "SupprimerFilm", "Film", new { id = film.Id }, new { @class = "btn btn-danger" });
+                            }
+                        </div>
+
+                        <div class="panel-body">
+                            <p>
+                                <b>Description :</b><br>
+                                @film.Description
+                            </p>
+                            <p>
+                                <b>Genre : </b>@film.Genre - <b>Date de sortie : </b>@film.DateDeSortie.ToString("dd MMM yyyy")
+                            </p>
+
+                            <p><b>Commentaires :</b></p>
+                            @foreach(var commentaire in film.Commentaires)
+                            {
+                                <div class="well well-sm">
+                                    <p>
+                                        <i>@commentaire.Utilisateur.NomUtilisateur</i><br />
+                                        @commentaire.Contenu
+                                    </p>
+                                </div>
+                                
+                            }
+
+                            
+                            @if (ViewBag.role == "ADMIN" || ViewBag.role == "USER")
+                            {
+                                @Html.ActionLink("Ajouter un commentaire", "CreerCommentaire", "Commentaire", new { id = film.Id }, new { @class = "btn btn-default" });
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

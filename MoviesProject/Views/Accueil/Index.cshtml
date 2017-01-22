@@ -1,0 +1,38 @@
+﻿@model List<MoviesProject.Models.Film>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Accueil";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Bienvenue @ViewBag.nom sur le site AnalyseCiné</h2>
+                </div>
+                <div class="panel-body">
+                    <p>Vos droits sur le site sont les suivants :</p>
+                    <ul class="list-group">
+                        @if (ViewBag.role == "USER")
+                        {
+                            <li class="list-group-item">Consulter les films dans la rubrique film</li>
+                            <li class="list-group-item">Ajouter des commentaires sur les films</li>
+                        }
+                        else if (ViewBag.role == "ADMIN")
+                        {
+                            <li class="list-group-item">Consulter les films dans la rubrique film</li>
+                            <li class="list-group-item">Ajouter des commentaires sur les films</li>
+                            <li class="list-group-item">Ajouter/Modifier des films</li>
+                        }
+                        else
+                        {
+                            <li class="list-group-item">Consulter les films dans la rubrique film</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
