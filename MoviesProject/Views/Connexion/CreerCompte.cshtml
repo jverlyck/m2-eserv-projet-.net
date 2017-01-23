@@ -9,21 +9,23 @@
     <div class="row">
         <div class="col-lg-offset-3 col-lg-6">
             <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Inscription</h4>
+                </div>
                 <div class="panel-body">
-                    <h3>Inscription</h3>
                     @using (Html.BeginForm())
                     {
-                        <div>
+                        <div class="form-group">
                             @Html.LabelFor(m => m.NomUtilisateur)
-                            @Html.TextBoxFor(m => m.NomUtilisateur)
+                            @Html.TextBoxFor(m => m.NomUtilisateur, new { @class = "form-control" })
                             @Html.ValidationMessageFor(m => m.NomUtilisateur)
                         </div>
-                        <div>
+                        <div class="form-group">
                             @Html.LabelFor(m => m.MotDePasse)
-                            @Html.PasswordFor(m => m.MotDePasse)
+                            @Html.PasswordFor(m => m.MotDePasse, new { @class = "form-control" })
                             @Html.ValidationMessageFor(m => m.MotDePasse)
                         </div>
-                        <input type="submit" value="Créer" />
+                        <input type="submit" value="Créer" class="btn btn-primary" />
                     }
                 </div>
             </div>
