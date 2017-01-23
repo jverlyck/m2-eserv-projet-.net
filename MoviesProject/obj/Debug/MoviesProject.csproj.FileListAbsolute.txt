@@ -41,3 +41,46 @@ E:\Mes_programmes\visualProjects\MoviesProject\MoviesProject\bin\fr\System.Web.M
 E:\Mes_programmes\visualProjects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.dll
 E:\Mes_programmes\visualProjects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.pdb
 E:\Mes_programmes\visualProjects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\csc.exe
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\vbc.exe
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\MoviesProject.dll.config
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\MoviesProject.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\MoviesProject.pdb
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\EntityFramework.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\EntityFramework.SqlServer.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Helpers.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Mvc.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Razor.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.Deployment.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.Razor.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\EntityFramework.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\EntityFramework.SqlServer.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Razor.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.Deployment.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Webpages.Razor.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Helpers.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\System.Web.Mvc.xml
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Razor.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Webpages.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Webpages.Razor.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.csprojResolveAssemblyReference.cache
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.dll
+C:\Users\utilisateur\Documents\Visual Studio 2015\Projects\MoviesProject\MoviesProject\obj\Debug\MoviesProject.pdb

@@ -11,5 +11,12 @@ namespace MoviesProject.Models
         public DbSet<Utilisateur> Utilisateurs { get; set; }
         public DbSet<Film> Films { get; set; }
         public DbSet<Commentaire> Commentaires { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Film>()
+                .HasMany(f => f.Commentaires)
+                .WithRequired(f => f.Film)
+                .WillCascadeOnDelete();
+        }
     }
 }
