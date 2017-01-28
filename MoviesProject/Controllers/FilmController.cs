@@ -11,7 +11,7 @@ namespace MoviesProject.Controllers
     {
         private IDal dal;
 
-        public FilmController() : this(new Dal()) 
+        public FilmController() : this(new Dal())
         {
         }
 
@@ -31,6 +31,19 @@ namespace MoviesProject.Controllers
 
             List<Film> listeDesFilms = dal.RecupererTousLesFilms();
             return View(listeDesFilms);
+        }
+
+        public ActionResult VoirFilm(string nomFilm)
+        {
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                IDal dal = new Dal();
+                Utilisateur utilisateur = dal.RecupererUtilisateur(HttpContext.User.Identity.Name);
+                ViewBag.role = utilisateur.Role;
+            }
+
+            Film film = dal.RecupererFilm(nomFilm);
+            return View(film);
         }
 
         public ActionResult CreerFilm()

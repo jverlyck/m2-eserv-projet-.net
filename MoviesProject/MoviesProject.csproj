@@ -134,6 +134,7 @@
     <Content Include="Views\Connexion\CreerCompte.cshtml" />
     <Content Include="Views\Film\ModifierFilm.cshtml" />
     <Content Include="Views\Commentaire\CreerCommentaire.cshtml" />
+    <Content Include="Views\Film\VoirFilm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

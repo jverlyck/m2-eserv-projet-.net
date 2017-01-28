@@ -1,0 +1,59 @@
+﻿@model MoviesProject.Models.Film
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Film";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            @using (Html.BeginForm("VoirFilm", "Film", FormMethod.Get, new { @class = "form-inline" }))
+            {
+                <div class="form-group">
+                    <label for="recherche">Recherche film :</label>
+                    <input type="text" id="recherche" name="nomFilm" class="form-control" /> 
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                <br /><br />
+            }
+
+            @if (Model == null)
+            {
+                <h1>Aucun film a été trouvé !</h1>
+            }
+            else
+            {
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <b>@Model.Nom</b>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>
+                            <b>Description :</b><br>
+                            @Model.Description
+                        </p>
+                        <p>
+                            <b>Genre : </b>@Model.Genre - <b>Date de sortie : </b>@Model.DateDeSortie.ToString("dd MMM yyyy")
+                        </p>
+
+                        <p><b>Commentaires :</b></p>
+                        @foreach (var commentaire in Model.Commentaires)
+                        {
+                            <div class="well well-sm">
+                                <p>
+                                    <i>@commentaire.Utilisateur.NomUtilisateur</i><br />
+                                    @commentaire.Contenu
+                                </p>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            }
+            @Html.ActionLink("Retour", "Index", "Film", new { @class = "btn btn-default" })
+        </div>
+    </div>
+</div>

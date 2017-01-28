@@ -27,6 +27,11 @@ namespace MoviesProject.Models
             return bdd.Films.FirstOrDefault(f => f.Id == id);
         }
 
+        public Film RecupererFilm(string nomFilm)
+        {
+            return bdd.Films.FirstOrDefault(f => f.Nom == nomFilm);
+        }
+
         public bool FilmExisteDeja(string nom)
         {
             return bdd.Films.Any(resto => string.Compare(resto.Nom, nom, StringComparison.CurrentCultureIgnoreCase) == 0);

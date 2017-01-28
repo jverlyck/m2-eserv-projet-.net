@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("MoviesProject", "Index", "Accueil", null, new { @class = "navbar-brand" })
+                @Html.ActionLink("AnalyseCiné", "Index", "Accueil", null, new { @class = "navbar-brand" })
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,10 +29,18 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Films <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Voir les films", "Index", "Film")</li>
+                            <li>@Html.ActionLink("Chercher un film", "VoirFilm", "Film")</li>
                             <li>@Html.ActionLink("Ajouter un film", "CreerFilm", "Film")</li>
                         </ul>
                     </li>
                 </ul>
+                @using (Html.BeginForm("VoirFilm", "Film", FormMethod.Get, new { @class = "navbar-form navbar-left", @id = "navbar-recherche" }))
+                {
+                    <div class="form-group">
+                        <input type="text" id="recherche" name="nomFilm" class="form-control" placeholder="nom d'un film" />
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                }
                 @Html.ActionLink("Se connecter", "Index", "Connexion", null, new { @class = "btn btn-default navbar-btn" })
             </div>
 

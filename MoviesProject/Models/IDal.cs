@@ -13,6 +13,7 @@ namespace MoviesProject.Models
         void ModifierFilm(int id, string nom, string genre, DateTime dateDeSortie, string description);
         void SupprimerFilm(int id);
         Film RecupererFilm(int id);
+        Film RecupererFilm(string nomFilm);
         List<Film> RecupererTousLesFilms();
         bool FilmExisteDeja(string nom);
 
